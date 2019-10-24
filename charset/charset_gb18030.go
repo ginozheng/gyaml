@@ -105,4 +105,6 @@ func (c *GB18030) Decode(bytes []byte) ([]rune, error) {
 			}
 		}
 	}
+
+	return runes, nil
 }

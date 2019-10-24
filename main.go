@@ -8,7 +8,7 @@ import (
 func main() {
 	cc := charset.UTF8{}
 	a := "我是中国人"
-	er, runes := cc.Decode([]byte(a))
+	runes, er := cc.Decode([]byte(a))
 	if er != nil {
 		fmt.Println(er.Error())
 	}
@@ -17,7 +17,7 @@ func main() {
 	}
 
 	fmt.Println("====================================")
-	er1, bytes := cc.Encode([]rune(a))
+	bytes, er1 := cc.Encode([]rune(a))
 	if er1 != nil {
 		fmt.Println(er1.Error())
 	}
