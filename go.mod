@@ -1,3 +1,3 @@
-module github.com/next-framework/nextyaml
+module github.com/ginozheng/gyaml
 
 go 1.13
